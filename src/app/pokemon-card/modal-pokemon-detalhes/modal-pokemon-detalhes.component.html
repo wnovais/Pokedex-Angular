@@ -1,0 +1,20 @@
+<div class="row" *ngIf="pokeService.detalhes">
+  <div>
+    <h1 mat-dialog-title>{{data.pokemon | titlecase}}</h1>
+    <div mat-dialog-content>Height: {{pokeService.detalhes.height * 0.1 | number}} m</div>
+    <div mat-dialog-content>Wight: {{pokeService.detalhes.weight * 0.1 | number}} kg</div>
+    <div mat-dialog-content>Ability: {{pokeService.detalhes.abilities[0].ability.name | titlecase}}</div>
+    <div class="tipo">
+      <div mat-dialog-content>Tipo: {{pokeService.detalhes.types[0].type.name | titlecase}}&nbsp;</div>
+      <div mat-dialog-content *ngIf="pokeService.detalhes.types?.length > 1">& {{pokeService.detalhes.types[1].type.name | titlecase}}</div>
+    </div>
+  </div>
+  
+  <div align:left>
+    <img mat-dialog-image [src]="pegarImagemPokemon()">
+  </div>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Fechar</button>
+</div>

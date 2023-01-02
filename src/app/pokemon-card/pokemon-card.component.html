@@ -1,0 +1,19 @@
+<!-- <div class="pokemon-card">
+  <img [src]="pegarImagemPokemon()"><br>
+  <div class="numero">
+    <b>{{ leadingZeros(this.numero) }}</b><br>
+  </div>
+  <b>{{ pokemon | titlecase}}</b>
+</div> -->
+
+<!-- <mat-card class="pokemon-card" (click)="openDialog(pokemon)"> -->
+  <mat-card class="pokemon-card" (click)="openDialog(pokemon)">
+  <mat-card-header>
+    <div mat-card-avatar class="pokemon-header-image">
+      <img mat-card-image  [src]="pegarSpritePokemon()">
+    </div>
+    <mat-card-title><b>{{ pokemon | titlecase}}</b></mat-card-title>
+    <mat-card-subtitle>#{{ leadingZeros(this.numero) }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="pegarImagemPokemon()">
+</mat-card>

@@ -1,0 +1,33 @@
+// .pokemon-card {
+//     font-family: "Flexo-Demi",arial,sans-serif;
+//     background-color: lightgrey;
+//     border: 1px solid darkgray;
+//     padding: 15px;
+//     border-radius: 10px;
+//     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+//     border-color: rgba(223,225,229,0);
+//     margin: 10px;
+// }
+
+// .numero{
+//     color: dimgrey;
+// }
+// .mat-card-header{
+//     background-color: white;
+// }
+.pokemon-card {
+    // display: flex;
+    max-width: 180px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    // background-color: lightgray;
+    font-family: "Flexo-Demi",arial,sans-serif
+  }
+
+  .pokemon-card:hover{
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+  }
+  
+  .pokemon-header-image {
+    background-size: cover;
+  }
